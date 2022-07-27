@@ -4,28 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <title>Frontend Mentor | Base Apparel coming soon page</title>
 </head>
 <body>
 	<main>
-		<section class="section__img">
-			<img src="images/logo.svg">
+		<section class="section__logo">
+			<img src="images/logo.svg" alt="">
 		</section>
 
+    <section class="section__img">
+      <source srcset="images/hero-desktop.jpg" media="(min-width: 1200px)">
+      <img src="images/hero-mobile.jpg" alt="">
+    </section>
+
 		<section class="section__content">
-				<h1 class="section__title"><span>We're</span> coming soon</h1>
+				<h1 class="section__title"><span>We're</span> <br> coming <br> soon</h1>
 
 				<p class="section__paragraph">Hello fellow shoppers! We're currently building our new fashion store. 
 				Add your email below to stay up-to-date with announcements and our launch deals.</p>
-			<input type="email" placeholder="Email Address" id="" required>
-			<input type="button" value=">" id="">
+			<input type="email" placeholder="Email Address" id="section__email" required>
+			<input type="button" value=">" id="section__button">
 		</section>
   </main>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">ThaisCode</a>.
     </p>
   </footer>
 </body>
