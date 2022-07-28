@@ -20,13 +20,13 @@ img {
 }
 
 .section__logo {
-	width: 100vw;
+	width: 90vw;
 	height: auto;
 	margin: 2rem;
 }
 
 .section__logo img {
-	width: 30%;
+	width: 40%;
 }
 
 .section__content {
@@ -56,12 +56,25 @@ img {
 	margin: 2rem;
 }
 
-#section__email {
+.form {
+	width: 95vw;
+	height: 8vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	
+	margin: 0 2vw;
+	position: relative;
+}
+
+#form__email {
+	
+	display: flex;
 	width: 80vw;
 	height: 8vh;
 	border: 1px solid hsl(0, 36%, 70%);
 	border-radius: 1.5rem;
-	margin-bottom: 1rem;
 }
 
  input::placeholder {
@@ -69,33 +82,33 @@ img {
 	padding-left: 1rem;
 }
 
-#section__button {
-	width: 18vw;
-	height: 8vh;
+.form__button {
+	
+	width: auto;
+	height: 8.5vh;
 	border: none;
 	border-radius: 1.5rem;
 	background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%) );
-	position: relative;
-	left: -4.5rem;
-	color: hsl(0, 0%, 100%);
-	font-weight: 600;
+	position: absolute;
+	right: 1.5rem;
+	padding: 0 8vw;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .attribution { 
 	font-size: 11px; 
-	text-align: center; }
+	text-align: center; 
+	margin-top: 1rem;
+}
 
 .attribution a { 
 	color: hsl(228, 45%, 44%);
 }
+
+/*Desktop*/
+@media screen and (min-width: 1280px){
+	
+}
+
+@media screen and (min-width: 1440px){}
+
+@media screen and (min-width: 1920px){}
