@@ -8,9 +8,12 @@ body {
 	min-height: auto; 
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 16px;
+	
 }
 
 main {
+	display: flex;
+	flex-direction: column;
 	width: 100vw;
 }
 
@@ -19,10 +22,15 @@ img {
 	height: auto;
 }
 
+.section__img {
+	order: 1;
+}
+
 .section__logo {
 	width: 90vw;
 	height: auto;
-	margin: 2rem;
+	margin: 2rem 0 2rem 2rem;
+	order: 0;
 }
 
 .section__logo img {
@@ -33,6 +41,7 @@ img {
 	width: 100vw;
 	height: auto;
 	text-align: center;
+	order: 3;
 }
 
 .section__title {
@@ -63,9 +72,9 @@ img {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	
-	margin: 0 2vw;
+	margin: 0 0.5rem;
 	position: relative;
+	order: 4;
 }
 
 #form__email {
@@ -83,7 +92,6 @@ img {
 }
 
 .form__button {
-	
 	width: auto;
 	height: 8.5vh;
 	border: none;
@@ -106,7 +114,85 @@ img {
 
 /*Desktop*/
 @media screen and (min-width: 1280px){
+	body {
+		min-width: 1280px;		
+	}
+
+	main {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.section__desktop {
+		display: flex;
+		flex-direction: column;
+		width: 50vw;
+		border: 1px solid red;
+	}
+
+	.section__img {
+		order: 4;
+	}
 	
+	.section__logo {
+		width: 50vw;
+		height: auto;
+		margin: 2rem 0 2rem 2rem;
+		order: 0;
+	}
+	
+	.section__logo img {
+		width: 20%;
+	}
+
+	.section__content {
+		width: 50vw;
+		height: auto;
+		text-align: justify;
+		order: 3;
+		border: 1px solid red;
+	}
+	
+	.section__title {
+		min-height: 5rem;
+		font-size: 2.3rem;
+		text-transform: uppercase;
+		letter-spacing: 0.5rem;
+		line-height: 2.5rem;
+		margin-top: 3rem;
+	}
+	
+	.section__title span {
+		color: hsl(0, 36%, 70%);
+		font-weight: 300;
+	}
+	
+	.section__paragraph {
+		color: hsl(0, 36%, 70%);
+		font-size: 0.9rem;
+		line-height: 1.3rem;
+		margin: 2rem;
+	}
+
+	.form {
+		width: 50vw;
+		height: 8vh;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		margin: 0 0.5rem;
+		position: relative;
+		order: 4;
+	}
+	
+	#form__email {
+		display: flex;
+		width: 20vw;
+		height: 8vh;
+		border: 1px solid hsl(0, 36%, 70%);
+		border-radius: 1.5rem;
+	}
 }
 
 @media screen and (min-width: 1440px){}
