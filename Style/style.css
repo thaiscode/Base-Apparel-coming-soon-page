@@ -22,18 +22,17 @@ img {
 	height: auto;
 }
 
-.section__img {
-	order: 1;
+.header__content {
+	display: none;
 }
 
-.section__logo {
+.header__logo {
 	width: 90vw;
 	height: auto;
 	margin: 2rem 0 2rem 2rem;
-	order: 0;
 }
 
-.section__logo img {
+.header__logo img {
 	width: 40%;
 }
 
@@ -41,7 +40,6 @@ img {
 	width: 100vw;
 	height: auto;
 	text-align: center;
-	order: 3;
 }
 
 .section__title {
@@ -74,11 +72,9 @@ img {
 	justify-content: center;
 	margin: 0 0.5rem;
 	position: relative;
-	order: 4;
 }
 
 #form__email {
-	
 	display: flex;
 	width: 80vw;
 	height: 8vh;
@@ -100,6 +96,7 @@ img {
 	position: absolute;
 	right: 1.5rem;
 	padding: 0 8vw;
+	box-shadow: 0 0 1em hsl(0, 80%, 86%);
 }
 
 .attribution { 
@@ -113,86 +110,78 @@ img {
 }
 
 /*Desktop*/
+
 @media screen and (min-width: 1280px){
 	body {
 		min-width: 1280px;		
 	}
 
 	main {
-		display: flex;
 		flex-direction: row;
 	}
 
-	.section__desktop {
-		display: flex;
-		flex-direction: column;
+	.header__main {
+		display: none;
+	}
+
+	.header__content {
+		display: inherit;
 		width: 50vw;
-		border: 1px solid red;
+		height: auto;
+		margin-left: 6rem;	
+	}
+	
+	.header__content img {
+		width: 20%;
 	}
 
 	.section__img {
-		order: 4;
-	}
-	
-	.section__logo {
 		width: 50vw;
 		height: auto;
-		margin: 2rem 0 2rem 2rem;
-		order: 0;
-	}
-	
-	.section__logo img {
-		width: 20%;
+		order: 1;
 	}
 
 	.section__content {
 		width: 50vw;
 		height: auto;
 		text-align: justify;
-		order: 3;
-		border: 1px solid red;
+		order: 0;
 	}
 	
 	.section__title {
-		min-height: 5rem;
-		font-size: 2.3rem;
-		text-transform: uppercase;
-		letter-spacing: 0.5rem;
-		line-height: 2.5rem;
-		margin-top: 3rem;
+		min-height: 7rem;
+		font-size: 4rem;
+		line-height: 4.5rem;
+		margin: 5rem 0 0 6rem;
 	}
-	
-	.section__title span {
-		color: hsl(0, 36%, 70%);
-		font-weight: 300;
-	}
-	
+		
 	.section__paragraph {
-		color: hsl(0, 36%, 70%);
-		font-size: 0.9rem;
-		line-height: 1.3rem;
-		margin: 2rem;
+		width: 30vw;
+		height: auto;
+		font-size: 0.9rem;	
+		line-height: 1.6rem;
+		margin: 2rem 0 2.5rem 6rem;
 	}
 
 	.form {
-		width: 50vw;
-		height: 8vh;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-		margin: 0 0.5rem;
-		position: relative;
-		order: 4;
+		width: 30vw;
+		height: 7vh;
+		margin: 0 6rem;
+		align-items: left;
 	}
 	
-	#form__email {
-		display: flex;
-		width: 20vw;
-		height: 8vh;
-		border: 1px solid hsl(0, 36%, 70%);
-		border-radius: 1.5rem;
+	.form__button {
+		right: 0;
+		padding: 0 3vw;
+		
 	}
+
+	.form__button:hover {
+		background: linear-gradient(135deg, hsl(0, 100%, 98%), hsl(0, 80%, 86%) );
+		cursor: pointer;
+		transition: 0.2s;
+	}
+
 }
 
 @media screen and (min-width: 1440px){}

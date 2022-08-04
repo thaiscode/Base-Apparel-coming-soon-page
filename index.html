@@ -9,31 +9,40 @@
     <title>Frontend Mentor | Base Apparel coming soon page</title>
 </head>
 <body>
+  
+
 	<main>
-    <picture class="section__img">
-      <source srcset="images/hero-desktop.jpg" media="(min-width: 1280px)">
-      <img src="images/hero-mobile.jpg" alt="">
-    </picture>
-
-    <section class="section__desktop">
-      <section class="section__logo">
+  <header class="header__logo header__main">
         <img src="images/logo.svg" alt="">
-      </section>
+  </header>
+  
+    <section class="section__img">
+      <picture>
+        <source srcset="images/hero-desktop.jpg" media="(min-width: 1280px)">
+        <img src="images/hero-mobile.jpg" alt="">
+      </picture>
+    </section>
 
-      <section class="section__content">
-          <h1 class="section__title"><span>We're</span> <br> coming <br> soon</h1>
+    <section class="section__content">
+      <header class="header__logo header__content">
+        <img src="images/logo.svg" alt="">
+    </header>
 
-          <p class="section__paragraph">Hello fellow shoppers! We're currently building our new fashion store. 
-          Add your email below to stay up-to-date with announcements and our launch deals.</p>
-        
-      </section>
+      <h1 class="section__title"><span>We're</span> <br> coming <br> soon</h1>
+
+      <p class="section__paragraph">Hello fellow shoppers! We're currently building our new fashion store. 
+      Add your email below to stay up-to-date with announcements and our launch deals.</p> 
 
       <form class="form">
         <input type="email" placeholder="Email Address" id="form__email" required>
         <button class="form__button"><img src="images/icon-arrow.svg" alt=""></button>
       </form>
     </section>
+
+     
+    
   </main>
+
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
