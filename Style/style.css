@@ -1,3 +1,5 @@
+/*Mobile first*/
+
 * {
 	margin: 0;
 	padding: 0;
@@ -8,13 +10,17 @@ body {
 	min-height: auto; 
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 16px;
-	
+	overflow-x: hidden;
 }
 
 main {
 	display: flex;
 	flex-direction: column;
 	width: 100vw;
+}
+
+a {
+	text-decoration: none;
 }
 
 img {
@@ -100,9 +106,9 @@ img {
 }
 
 .attribution { 
-	font-size: 11px; 
+	font-size: 0.8rem; 
 	text-align: center; 
-	margin-top: 1rem;
+	margin-top: 1.2rem;
 }
 
 .attribution a { 
@@ -118,6 +124,8 @@ img {
 
 	main {
 		flex-direction: row;
+		background: url(/images/bg-pattern-desktop.svg) no-repeat;
+		background-size: 50vw cover;
 	}
 
 	.header__main {
@@ -182,8 +190,82 @@ img {
 		transition: 0.2s;
 	}
 
+	.attribution { 
+		font-size: 1.1rem; 
+		margin-top: 1.5rem;
+	}
+
 }
 
-@media screen and (min-width: 1440px){}
+@media screen and (min-width: 1440px){
+	body {
+		min-width: 1440px;		
+	}
 
-@media screen and (min-width: 1920px){}
+	main {
+		background-size: cover;
+	}
+
+	.header__content {
+		margin-top: 4rem;
+	}
+	
+	.header__content img {
+		width: 25%;
+	}
+
+	.section__title {
+		font-size: 5rem;
+		line-height: 6rem;
+		margin: 8rem 0 0 6rem;
+	}
+		
+	.section__paragraph {
+		font-size: 1rem;	
+		line-height: 1.7rem;
+		margin: 2rem 0 4rem 6rem;
+	}
+
+	.form {
+		width: 31vw;
+	}
+
+	.attribution { 
+		font-size: 1.2rem; 
+	}
+}
+
+@media screen and (min-width: 1920px){
+	body {
+		min-width: 1920px;
+	}
+
+	.header__content img {
+		width: 30%;
+	}
+
+	.section__title {
+		font-size: 7rem;
+		line-height: 8rem;
+		margin: 8rem 0 0 6rem;
+	}
+		
+	.section__paragraph {
+		font-size: 1.4rem;	
+		line-height: 2rem;
+		width: 32vw;
+		margin: 4rem 0 5rem 6rem;
+	}
+
+	.form {
+		width: 33vw;
+	}
+
+	input::placeholder {
+		font-size: 1.2rem;
+	}
+
+	.attribution { 
+		font-size: 1.5rem; 
+	}
+}
