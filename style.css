@@ -151,7 +151,7 @@ img {
 	main {
 		flex-direction: row;
 		background: url(/images/bg-pattern-desktop.svg) no-repeat;
-		background-size: 50vw cover;
+		background-size: cover;
 	}
 
 	.header__main {
@@ -234,10 +234,6 @@ img {
 @media screen and (min-width: 1440px){
 	body {
 		min-width: 1440px;		
-	}
-
-	main {
-		background-size: cover;
 	}
 
 	.header__content {
