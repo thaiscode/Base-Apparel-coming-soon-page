@@ -80,6 +80,20 @@ img {
 	position: relative;
 }
 
+.form__error {
+	display: none;
+	width: 7%;
+	position: absolute;
+	left: 14rem;
+}
+
+.form__val p {
+	font-size: 0.8rem;
+	text-align: left;
+	color: hsl(0, 93%, 68%);
+	margin: 0.5rem 3.5rem;
+}
+
 #form__email {
 	display: flex;
 	width: 80vw;
@@ -116,6 +130,18 @@ img {
 }
 
 /*Desktop*/
+
+@media screen and (min-width: 768px){
+	.form__error {
+		width: 5%;
+		left: 32rem;
+	}
+	
+	.form__val p {
+		font-size: 0.8rem;
+		margin: 0.7rem 5rem;
+	}
+}
 
 @media screen and (min-width: 1280px){
 	body {
@@ -177,11 +203,19 @@ img {
 		margin: 0 6rem;
 		align-items: left;
 	}
+
+	.form__error {
+		left: 16rem;
+	}
+	
+	.form__val p {
+		font-size: 0.9rem;
+		margin: 0.8rem 7.2rem;
+	}
 	
 	.form__button {
 		right: 0;
 		padding: 0 3vw;
-		
 	}
 
 	.form__button:hover {
@@ -229,6 +263,10 @@ img {
 	.form {
 		width: 31vw;
 	}
+	
+	.form__error {
+		left: 19rem;
+	}
 
 	.attribution { 
 		font-size: 1.2rem; 
@@ -259,6 +297,15 @@ img {
 
 	.form {
 		width: 33vw;
+	}
+
+	.form__error {
+		left: 28rem;
+	}
+	
+	.form__val p {
+		font-size: 1.2rem;
+		margin-top: 0.9rem;
 	}
 
 	input::placeholder {
