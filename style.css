@@ -150,7 +150,7 @@ img {
 
 	main {
 		flex-direction: row;
-		background: url(/images/bg-pattern-desktop.svg) no-repeat;
+		background: url(images/bg-pattern-desktop.svg) no-repeat;
 		background-size: cover;
 	}
 
