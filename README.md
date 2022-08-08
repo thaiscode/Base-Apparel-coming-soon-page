@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [](https://thaiscode.github.io/Base-Apparel-coming-soon-page/)
+- Solution URL: ![](https://www.frontendmentor.io/solutions/base-apparel-coming-soon-page-with-flexbox-and-js-vanilla-kgfK-ke52Q)
+- Live Site URL: ![](https://thaiscode.github.io/Base-Apparel-coming-soon-page/)
 
 ## My process
 
